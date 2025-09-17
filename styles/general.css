@@ -1,0 +1,21 @@
+:root {
+    /* GENERALES ENTRE MODOS */
+
+    /* Color y fuente de logo */ 
+
+    
+
+    /* Avance de la web */
+
+    --main-restante-progreso: #f26a8d;
+
+    /* colores predeterminados */
+
+    --main-blue-color: #7aa2f7;
+    --main-yellow-color: #e0af68;
+    --main-black-color: #414868;
+    --main-white-color: #f1faee;
+    --main-white-color-hover: #e0e1dd;
+    --main-red-color: #e63946;
+    --main-red-color-hover: #fb6f92;
+}

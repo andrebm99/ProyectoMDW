@@ -1,0 +1,29 @@
+/* COLORES PARA EL MODO CLARO */
+
+
+:root {
+    /* Texto */
+    --text-color-light: #001427;
+
+    /* Fuente modo claro */ 
+
+    --fuente-color-light: #0d1b2a;
+    --logo-hover: #fb6f92;
+
+    /* Body Light */
+
+    --main-body-light: #edf6f9;
+
+    /* Barra de navegacion */
+
+    --main-barra-color-light: #d5bdaf;
+
+    /* Boton */
+
+    --main-boton-color-light: #ee6c4d;
+    --main-boton-hover-color-light: #f7c59f;
+
+    /* Formuylario */ 
+
+    --main-formulario-light: #778da9;
+}

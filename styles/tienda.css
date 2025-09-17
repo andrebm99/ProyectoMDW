@@ -1,0 +1,1082 @@
+@import url(colores_light.css);
+@import url(colores_dark.css);
+@import url(general.css);
+
+* {
+  margin: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+main {
+  padding-top: 40px;
+  min-height: calc(100vh - 80px);
+}
+
+
+.main-productos {
+  margin: 0;
+}
+
+header {
+  top: 0;
+  left: 0;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+  background-color: var(--main-barra-color-light);
+  color: var(--main-white-color);
+  padding: 0 20px;
+  height: 60px;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: var(--main-body-light);
+}
+
+.bienvenida-tienda {
+  height: 100vh;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-image: linear-gradient(0deg,
+      rgba(0, 0, 0, 0.3),
+      rgba(0, 0, 0, 0.3)), url("../images/background-tienda.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.caja-contenido {
+  max-width: 55vw;
+}
+
+.caja-contenido h1 {
+  text-align: center;
+  font-size: 3em;
+  color: bisque;
+}
+
+.visualizacion-productos {
+  min-height: 20vh;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  display: flex;
+  padding-top: 20px;
+
+}
+
+.container-categoria {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+  border-radius: 10px;
+  background-color: white;
+}
+
+.categorias {
+
+  padding: 10px;
+  max-width: 100px;
+  max-height: 140px;
+  border-radius: 10px;
+  margin: auto;
+  background: white;
+}
+
+.categorias a {
+  font: 1em;
+  font-family: Roboto;
+  text-decoration: none;
+  color: var(--text-color-light);
+}
+
+.categorias a:hover {
+  text-decoration: underline;
+
+}
+
+.top-visualizacion {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: 1fr;
+  margin: auto;
+  gap: 30px;
+
+}
+
+.top-visualizacion img {
+  width: 100%;
+  height: 100%;
+
+}
+
+.polos {
+  grid-column: 1 / span 1;
+  grid-row: 1 / span 1;
+}
+
+.chompas {
+  grid-column: 2 / span 1;
+  grid-row: 1 / span 1;
+}
+
+.pantalones {
+  grid-column: 3 / span 1;
+  grid-row: 1 / span 1;
+}
+
+/* Venta Productos */
+
+.caja-chompas img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.caja-polos img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.caja-pantalones img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.caja-casacas img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+/* Configuracion boton agregar carrito */
+.agregar-carrito {
+  background-color: #ffbf69;
+  border: none;
+  padding: 10px;
+  border-radius: 10px;
+  font-size: 1.1em;
+  cursor: pointer;
+}
+
+/* Configuracion de la pantalla de la tienda */
+
+.zona-polo {
+  max-height: 100vh;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  display: flex;
+  max-width: 1100px;
+  margin: auto;
+  gap: 20px;
+  padding: 20px;
+}
+
+/* Zona de polos */
+
+.container-polos {
+  margin: auto;
+  gap: 30px;
+
+}
+
+.caja-polos {
+  text-align: center;
+  flex-direction: column;
+  display: flex;
+  width: 100%;
+  height: 100%;
+}
+
+/* configuración Pantalones */
+
+.zona-pantalones {
+  max-height: 100vh;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  display: flex;
+  max-width: 950px;
+  margin: auto;
+  gap: 20px;
+  padding: 20px;
+}
+
+.container-pantalones {
+  margin: auto;
+  width: 100%;
+  max-width: 1100px;
+  height: 400px;
+  gap: 30px;
+}
+
+.caja-pantalones {
+  text-align: center;
+  flex-direction: column;
+  display: flex;
+  width: 100%;
+  height: 100%;
+}
+
+.caja-pantalones a {
+  font-size: 1em;
+  text-decoration: none;
+  padding: 10px;
+  color: var(--text-color-light);
+  margin-top: 10px;
+}
+
+
+
+/* Configuración de chompas */
+
+.zona-chompas {
+  max-height: 100vh;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  display: flex;
+  max-width: 950px;
+  margin: auto;
+  gap: 20px;
+  padding: 20px;
+}
+
+.container-chompas {
+  margin: auto;
+  width: 100%;
+  max-width: 1100px;
+  height: 400px;
+  gap: 30px;
+}
+
+.caja-chompas {
+  text-align: center;
+  flex-direction: column;
+  display: flex;
+  width: 100%;
+  height: 100%;
+}
+
+
+.caja-chompas a {
+  font-size: 1em;
+  text-decoration: none;
+  padding: 10px;
+  color: var(--text-color-light);
+  margin-top: 10px;
+}
+
+.caja-chompas a:hover {
+  text-decoration: underline;
+}
+
+/* Configuración de casacas */
+
+.zona-casacas {
+  max-height: 100vh;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  display: flex;
+  max-width: 950px;
+  margin: auto;
+  gap: 20px;
+  padding: 20px;
+}
+
+.container-casacas {
+  margin: auto;
+  width: 100%;
+  max-width: 900px;
+  height: 400px;
+  gap: 30px;
+  padding-top: 10px;
+}
+
+.caja-casacas {
+  text-align: center;
+  flex-direction: column;
+  display: flex;
+  width: 100%;
+  height: 100%;
+}
+
+.caja-casacas a {
+  font-size: 1em;
+  text-decoration: none;
+  padding: 10px;
+  color: var(--text-color-light);
+  margin-top: 10px;
+}
+
+
+/* Configuración del footer */
+
+footer {
+  background-color: var(--main-barra-color-light);
+  text-align: center;
+  padding: 10px;
+  width: 100%;
+}
+
+footer p {
+  color: var(--text-color-light);
+  font-family: Roboto;
+  font-size: 13px;
+}
+
+
+footer a {
+  font-size: 1.4em;
+  color: var(--text-color-light);
+  padding: 10px;
+  text-decoration: none;
+}
+
+/* SOLO CONFIGURACIÓN PARA DARK MODE*/
+
+body.dark-mode {
+  background-color: var(--main-background-color-dark);
+
+}
+
+body.dark-mode .main-productos a{
+  color: var(--main-text-color-dark);
+}
+
+
+
+/* CONFIGURACION DE TEXTO */
+
+
+body.dark-mode .logo {
+  color: var(--main-text-color-dark);
+}
+
+/* Configuracion footer modo oscuro */
+body.dark-mode footer {
+  background-color: var(--main-barra-color-dark);
+}
+
+body.dark-mode footer a {
+  color: var(--main-text-color-dark);
+}
+
+body.dark-mode label {
+  color: var(--main-text-color-dark);
+}
+
+body.dark-mode footer p {
+  color: var(--main-text-color-dark);
+}
+
+/* Configuracion para pantallas SE */
+@media screen and (max-width: 375px) {
+  .top-visualizacion{
+    gap: 10px;
+    padding: 5px;
+  }
+
+  .categorias{
+    max-width: 80px;
+    max-height: 100px;
+    padding: 5px;
+  }
+
+  .container-polos,
+  .container-casacas,
+  .container-pantalones,
+  .container-chompas{
+    width: 100%;
+    min-width: unset;
+    max-width: 100vw;
+    padding: 10px;
+    gap: 15px;
+    min-height: 100vh;
+  }
+
+  .categorias a{
+    color: var(--text-color-light);
+  }
+
+  .main-productos a{
+    color: var(--text-color-light);
+  }
+
+  /* Ajuste de imagenes para pantallas muy pequeñas */ 
+
+  .caja-polos img,
+  .caja-pantalones img,
+  .caja-chompas img,
+  .caja-casacas img{
+    height: 150px;
+    object-fit: cover;
+  }
+
+  /* Ajustando boton */ 
+
+  .agregar-carrito{
+    font-size: 0.9em;
+    padding: 8px;
+  }
+
+  /* Ajuste zona de productos */ 
+  .zona-polo,
+  .zona-chompas,
+  .zona-pantalones,
+  .zona-casacas{
+    padding: 10px;
+    gap: 10px;
+  }
+}
+
+
+
+/* Barra de navegación -> Celular */
+
+/* Configuracion para pantallas más pequeñas */
+@media screen and (max-width: 500px) {
+
+  .visualizacion-productos {
+    min-height: 20vh;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    display: flex;
+    padding-top: 20px;
+
+  }
+
+  .container-categoria {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: white;
+  }
+
+  .categorias {
+    padding: 10px;
+    max-width: 100px;
+    max-height: 100px;
+    border-radius: 10px;
+    margin: auto;
+    background: white;
+  }
+
+  .categorias a {
+    font: 1em;
+    font-family: Roboto;
+    text-decoration: none;
+    color: var(--text-color-light);
+  }
+
+  .top-visualizacion {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 1fr;
+    margin: auto;
+    gap: 20px;
+    padding: 10px;
+    padding-top: 0;
+
+  }
+
+  .container-pantalones,
+  .container-polos,
+  .container-casacas,
+  .container-chompas {
+    width: 100%;
+    min-width: unset;
+    max-height: 80vh;
+    max-height: 100vh;
+  }
+
+}
+
+/* Pantallas medianas */ 
+
+@media screen and (max-width: 768px) {
+  header {
+    background-color: var(--main-barra-color-light);
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+
+  }
+
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 5px;
+
+  }
+
+  .toggle {
+    display: block;
+    font-size: 1.4em;
+    background: none;
+    border: none;
+  }
+
+  .menu {
+    position: absolute;
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--main-barra-color-light);
+    top: 50px;
+    left: 0;
+    width: 100%;
+    height: calc(100vh - 30px);
+    padding: 10px;
+    gap: 50px;
+  }
+
+  .cambiar-modo {
+    display: block;
+    font-size: 1.2em;
+    color: var(--main-boton-color-ligth);
+    width: 50px;
+    height: 50px;
+    background-color: var(--main-red-color);
+    border: none;
+    border-radius: 50%;
+
+  }
+
+  .menu.active {
+    display: flex;
+  }
+
+  .menu li {
+    list-style-type: none;
+  }
+
+  .menu a {
+    font-family: Comfortaa;
+    color: var(--text-color-light);
+    font-size: 1.5em;
+    text-decoration: none;
+
+  }
+
+  .logo {
+    color: var(--text-color-light);
+    padding-left: 15px;
+    font-size: 1.8em;
+  }
+
+  a {
+    padding: 10px;
+    font-size: 1em;
+    text-decoration: none;
+    font-family: Comfortaa;
+  }
+
+
+
+  /* Configuración de celular para el grid */
+
+
+  /* Zona de polos */
+
+  .container-polos {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    max-height: 100vh;
+    max-width: 60vw;
+  }
+
+
+  .clasico {
+    grid-column: 1 / span 1;
+    grid-row: 1 / span 1;
+  }
+
+  .oversize {
+    grid-column: 2 / span 1;
+    grid-row: 1 / span 1;
+  }
+
+  .cuelloV {
+    grid-column: 1 / span 1;
+    grid-row: 2 / span 1;
+  }
+
+  .tipoCamisa {
+    grid-column: 2 / span 1;
+    grid-row: 2 / span 1;
+  }
+
+  /* configuración Pantalones */
+
+  .container-pantalones {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    min-height: 90vh;
+    max-width: 60vw;
+  }
+
+
+  .jeans {
+    grid-column: 1 / span 1;
+    grid-row: 1 / span 1;
+  }
+
+  .skinny {
+    grid-column: 2 / span 1;
+    grid-row: 1 / span 1;
+  }
+
+  .cargo {
+    grid-column: 3 / span 1;
+    grid-row: 1 / span 1;
+  }
+
+  .cargo {
+    grid-column: 3 / span 1;
+    grid-row: 1 / span 1;
+  }
+
+  /* Configuración de chompas */
+
+  .container-chompas {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    min-height: 90vh;
+    max-width: 60vw;
+    width: 100%;
+  }
+
+  .caja-chompas {
+    transition: transform 0.3s ease, color 0.3s ease;
+  }
+
+  .caja-chompas:hover {
+    transform: scale(1.02);
+  }
+
+  .clasica {
+    grid-column: 1 / span 1;
+    grid-row: 1 / span 1;
+  }
+
+  .cardigan {
+    grid-column: 2 / span 1;
+    grid-row: 1 / span 1;
+  }
+
+  .cuelloV-chompas {
+    grid-column: 1 / span 1;
+    grid-row: 2 / span 1;
+  }
+
+  .hoddie {
+    grid-column: 2 / span 1;
+    grid-row: 2 / span 1;
+  }
+
+  /* Configuración de casacas */
+
+  .container-casacas {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    min-height: 100vh;
+    max-width: 60vw;
+    width: 80vw;
+    margin: auto;
+  }
+
+  .biker {
+    grid-column: 1 / span 1;
+    grid-row: 1 / span 1;
+  }
+
+  .bomber {
+    grid-column: 2 / span 1;
+    grid-row: 1 / span 1;
+  }
+
+  .casaca-jean {
+    grid-column: 1 / span 1;
+    grid-row: 2 / span 1;
+  }
+
+  .parka {
+    grid-column: 2 / span 1;
+    grid-row: 2 / span 1;
+  }
+
+
+
+  /* MODO OSCURO */
+  body.dark-mode .header {
+    background-color: var(--main-barra-color-dark);
+  }
+
+  body.dark-mode .menu {
+    background-color: var(--main-barra-color-dark);
+  }
+
+  body.dark-mode .cambiar-tema {
+    background-color: var(--main-barra-color-dark);
+  }
+
+  body.dark-mode .toggle {
+    color: var(--main-text-color-dark);
+  }
+
+  body.dark-mode .menu a {
+    color: var(--main-text-color-dark);
+  }
+
+}
+
+/* Pantallas grandes */
+
+@media(min-width: 769px) {
+
+  header {
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 999;
+  }
+
+  
+
+  .cambiar-modo {
+    display: block;
+    font-size: 1.5em;
+    width: 40px;
+    height: 40px;
+    background-color: var(--main-barra-color-light);
+    border: none;
+    border-radius: 50%;
+
+  }
+
+  .cambiar-modo:hover {
+    background-color: var(--main-barra-color-dark);
+    color: var(--main-text-color-dark);
+  }
+
+
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+  }
+
+  .logo {
+    color: var(--fuente-color-light);
+    font-size: 1.7em;
+    text-decoration: none;
+    font-family: "Pacifico", cursive;
+  }
+
+  .logo:hover {
+    color: var(--logo-hover);
+  }
+
+  .menu {
+    display: flex !important;
+    flex-direction: row;
+    list-style: none;
+    background-color: transparent;
+    align-items: center;
+    justify-content: flex-end;
+    position: static;
+    height: auto;
+    gap: 10px;
+    padding: 0;
+  }
+
+  .menu li a {
+    color: var(--fuente-color-light);
+    padding: 10px;
+    font-size: 1em;
+    text-decoration: none;
+  }
+
+  .menu li {
+    transition: transform 0.3s ease, color 0.3s ease;
+  }
+
+  .menu li:hover {
+    transform: scale(1.1);
+  }
+
+  a {
+    font-family: Comfortaa;
+  }
+
+  .toggle {
+    display: none;
+  }
+
+  .categorias{
+    text-align: center;
+  }
+
+
+  main .container {
+    max-width: 960px;
+    align-items: center;
+  }
+
+  .caja-contenido h1 {
+    transition: transform 0.3s ease, color 0.3s ease;
+  }
+
+  .caja-contenido h1:hover {
+    transform: scale(1.1);
+  }
+
+
+  /* Configuracion de la pantalla de la tienda */
+
+  /* Zona de polos */
+
+  .container-polos {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(1, 1fr);
+    max-height: 100vh;
+    height: 40vh;
+  }
+
+  .caja-polos {
+    transition: transform 0.3s ease, color 0.3s ease;
+  }
+
+  .caja-polos:hover {
+    transform: scale(1.02);
+  }
+
+  .caja-polos a {
+    padding: 10px;
+    color: var(--text-color-light);
+    margin-top: 10px;
+    text-decoration: none;
+  }
+
+  .caja-polos a:hover {
+    text-decoration: underline;
+  }
+
+  .clasico {
+    grid-column: 1 / span 1;
+    grid-row: 1 / span 1;
+  }
+
+  .oversize {
+    grid-column: 2 / span 1;
+    grid-row: 1 / span 1;
+  }
+
+  .cuelloV {
+    grid-column: 3 / span 1;
+    grid-row: 1 / span 1;
+  }
+
+  .tipoCamisa {
+    grid-column: 4 / span 1;
+    grid-row: 1 / span 1;
+  }
+
+  /* configuración Pantalones */
+
+  .container-pantalones {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(1, 1fr);
+    max-height: 100vh;
+    height: 40vh;
+
+  }
+
+  .caja-pantalones a:hover {
+    text-decoration: underline;
+  }
+
+  .caja-pantalones {
+    transition: transform 0.3s ease, color 0.3s ease;
+  }
+
+  .caja-pantalones:hover {
+    transform: scale(1.02);
+  }
+
+  .jeans {
+    grid-column: 1 / span 1;
+    grid-row: 1 / span 1;
+  }
+
+  .skinny {
+    grid-column: 2 / span 1;
+    grid-row: 1 / span 1;
+  }
+
+  .cargo {
+    grid-column: 3 / span 1;
+    grid-row: 1 / span 1;
+  }
+
+  .cargo {
+    grid-column: 3 / span 1;
+    grid-row: 1 / span 1;
+  }
+
+
+
+  /* Configuración de chompas */
+
+  .container-chompas {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(1, 1fr);
+    max-height: 100vh;
+    height: 40vh;
+  }
+
+  .caja-chompas {
+    transition: transform 0.3s ease, color 0.3s ease;
+  }
+
+  .caja-chompas:hover {
+    transform: scale(1.02);
+  }
+
+  .clasica {
+    grid-column: 1 / span 1;
+    grid-row: 1 / span 1;
+  }
+
+  .cardigan {
+    grid-column: 2 / span 1;
+    grid-row: 1 / span 1;
+  }
+
+  .cuelloV-chompas {
+    grid-column: 3 / span 1;
+    grid-row: 1 / span 1;
+  }
+
+  .hoddie {
+    grid-column: 4 / span 1;
+    grid-row: 1 / span 1;
+  }
+
+  /* Configuración de casacas */
+
+  .container-casacas {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(1, 1fr);
+    min-height: 40vh;
+    max-height: 100vh;
+  }
+
+  .caja-casacas {
+    transition: transform 0.3s ease, color 0.3s ease;
+  }
+
+  .caja-casacas:hover {
+    transform: scale(1.02);
+  }
+
+  .caja-casacas a:hover {
+    text-decoration: underline;
+  }
+
+  .biker {
+    grid-column: 1 / span 1;
+    grid-row: 1 / span 1;
+  }
+
+  .bomber {
+    grid-column: 2 / span 1;
+    grid-row: 1 / span 1;
+  }
+
+  .casaca-jean {
+    grid-column: 3 / span 1;
+    grid-row: 1 / span 1;
+  }
+
+  .parka {
+    grid-column: 4 / span 1;
+    grid-row: 1 / span 1;
+  }
+
+  footer {
+    justify-content: space-between;
+    flex-direction: row;
+    text-align: center;
+    padding: 20px;
+  }
+
+
+
+  /* SOLO DARK MODE */
+
+  body.dark-mode .header {
+    background-color: var(--main-barra-color-dark);
+    color: var(--main-white-color);
+  }
+
+  body.dark-mode .navbar {
+    background-color: var(--main-barra-color-dark);
+  }
+
+  body.dark-mode .navbar a {
+    color: var(--main-white-color);
+  }
+
+  body.dark-mode .logo:hover {
+    color: var(--logo-hover);
+  }
+
+  body.dark-mode .cambiar-modo {
+    background-color: var(--main-barra-color-dark);
+    color: var(--main-white-color);
+  }
+
+  body.dark-mode .cambiar-modo:hover {
+    background-color: var(--main-barra-color-light);
+    color: var(--text-color-light);
+  }
+
+
+}

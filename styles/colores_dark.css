@@ -1,0 +1,44 @@
+:root {
+
+    
+    /* Boton Dark Mode*/
+
+    --main-boton-dark: ;
+
+    /* Modo Oscuro */
+
+    /* Texto */
+    --main-text-color-dark-barra: #d0e1f9;
+    --main-text-color-dark: #fefae0;
+
+    /* Boton Dark Ligth*/
+    --boton-ligth: #001427;
+
+    /* Background Dark */ 
+    --main-background-color-dark: #1b263b;
+
+    /* Barra */
+    --main-barra-color-dark: #14213d;
+    --main-color-redes-dark: #2b2d42;
+    --main-hover-background-dark: #283655;
+
+    /* Boton */
+    --main-boton-color-dark: #1b263b;
+    --main-boton-hover-color-dark: #283655;
+
+
+    /* Borde de foto */
+    --main-border-perfil-color: #001524;
+
+    
+
+
+    /* Formulario */
+    --main-form: #0d1b2a;
+
+    /* Tabla */
+    --main-encabezado-tabla: #1E1F26;
+    --main-background-th: #283655;
+    --main-background-td: #4d648d;
+    --main-titulo-tabla: #d0e1f9;
+}
